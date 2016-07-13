@@ -9,7 +9,7 @@ var tamanio = opt.size || 'grande'
 ,archivo = opt.archivo || ''
 ,url = opt.url_ || ''
 ,fin_ajax = opt.fin || function () { console.log('no'); }
-id_modal =  'modal_'+opt.id_m || 'modal_'+cont_modal;
+id_modal =  opt.id_m || 'modal_'+cont_modal;
 console.log(ajaxs_);
 
 var modal_g = document.createElement('div');
