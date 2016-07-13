@@ -14,9 +14,9 @@ console.log(ajaxs_);
 
 var modal_g = document.createElement('div');
 modal_g.className = "cont_modal_front_princ";
-modal_g.id = "modal_"+cont_modal;
+modal_g.id = id_modal;
 modal_g.style.zIndex = "100"+cont_modal;
- modal_g.innerHTML = '<div class="modal_headr"> <div class="cont_icon_back"><a href="#back" onclick= "modal_int_t({ open_:\'0\', id_m: \'modal_'+cont_modal+'\', size:\'grandre\' })" ><i class="material-icons">&#xE5C4;</i></a> </div> </div><div class="cont_body_modal"></div>';
+ modal_g.innerHTML = '<div class="modal_headr"> <div class="cont_icon_back"><a href="#back" onclick= "modal_int_t({ open_:\'0\', id_m: \''+id_modal+'\', size:\'grandre\' })" ><i class="material-icons">&#xE5C4;</i></a> </div> </div><div class="cont_body_modal"></div>';
 
 var modal_back = document.createElement('div');
 modal_back.className = "cont_modal_peq_back";
@@ -24,9 +24,9 @@ modal_back.id = "modal_peq_back_modal_"+cont_modal;
 
 var modal_peq = document.createElement('div');
 modal_peq.className = "cont_modal_peq";
-modal_peq.id = "modal_"+cont_modal;
+modal_peq.id = id_modal;
 modal_peq.style.zIndex = "100"+cont_modal;
-modal_peq.innerHTML = '	<div class="modal_headr"> <div class="cont_icon_back"> <a href="#back" onclick= "modal_int_t({ open_:\'0\', id_m: \'modal_'+cont_modal+'\', size:\'peq\' })"  > <i class="material-icons">&#xE14C;</i> </a> </div> </div> <div class="cont_body_modal_p"></div>'; 
+modal_peq.innerHTML = '	<div class="modal_headr"> <div class="cont_icon_back"> <a href="#back" onclick= "modal_int_t({ open_:\'0\', id_m: \''+id_modal+'\', size:\'peq\' })"  > <i class="material-icons">&#xE14C;</i> </a> </div> </div> <div class="cont_body_modal_p"></div>'; 
 
 if (tamanio == 'grande') {
 	document.body.appendChild(modal_g);
