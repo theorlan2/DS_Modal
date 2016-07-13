@@ -1,3 +1,4 @@
+var cont_modal = 0;
 function modal_int_p(t) {
 var elemt = document.querySelector('.cont_modal_peq');
 if (t == 1 ) {
