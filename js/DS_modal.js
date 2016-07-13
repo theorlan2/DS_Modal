@@ -1,22 +1,3 @@
-var cont_modal = 0;
-function modal_int_p(t) {
-var elemt = document.querySelector('.cont_modal_peq');
-if (t == 1 ) {
-elemt.style.display = "block";
-document.querySelector('.cont_modal_peq_back').style.display = "block";
-setTimeout(function  () {
-elemt.style.opacity = "1"; 
-document.querySelector('.cont_modal_peq_back').style.opacity = "1";
-}, 100);
-}else{
-elemt.style.opacity = "0";
-document.querySelector('.cont_modal_peq_back').style.opacity = "0";
-setTimeout(function() {
-elemt.style.display = "none"; 
-document.querySelector('.cont_modal_peq_back').style.display = "none";
-}, 500);
-}
- }
 
 var cont_modal = 0;
 function modal_int_t(opt) {
